@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/include
+END
+spike.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/include/spike.h
+END
+spike_dcerpc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/include/spike_dcerpc.h
+END
+buf.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/include/buf.h
+END
+dlargs.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/include/dlargs.h
+END
+hdebug.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/include/hdebug.h
+END
+tcpstuff.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/include/tcpstuff.h
+END
+spike_oncrpc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/include/spike_oncrpc.h
+END
+udpstuff.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/include/udpstuff.h
+END
+base64.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/include/base64.h
+END
+dlrpc.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/include/dlrpc.h
+END
+listener.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/include/listener.h
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 22
+/rspike/!svn/ver/6/ext
+END
+extconf.rb
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/rspike/!svn/ver/8/ext/extconf.rb
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/rspike/!svn/ver/2/ext/Makefile
+END
+rspike.c
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/rspike/!svn/ver/8/ext/rspike.c
+END

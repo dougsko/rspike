@@ -1,0 +1,16 @@
+s_string("doug");
+s_string("^^");
+
+s_string("Ar");
+s_string("1111111");
+s_string("\n");
+
+s_string("^^");
+s_string("Ac");
+s_string("doug");
+s_string("\n");
+
+// spy on
+s_string_variable("1");
+s_string("^Af");
+s_string("\n");

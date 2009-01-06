@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/encrypted
+END
+VULNS.txt.gpg
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/encrypted/VULNS.txt.gpg
+END
+domsrpcfuzz2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/encrypted/domsrpcfuzz2.sh
+END
+domsrpcfuzz3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/encrypted/domsrpcfuzz3.sh
+END

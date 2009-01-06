@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/src/audits/SMTP
+END
+smtp1.spk
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/src/audits/SMTP/smtp1.spk
+END
+smtp2.spk
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/src/audits/SMTP/smtp2.spk
+END
+smtpauth.spk
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/src/audits/SMTP/smtpauth.spk
+END
+smtp3.spk
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/src/audits/SMTP/smtp3.spk
+END
+smtp4.spk
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/src/audits/SMTP/smtp4.spk
+END
+smtp5.spk
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/src/audits/SMTP/smtp5.spk
+END
+smtp1_var.spk
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/src/audits/SMTP/smtp1_var.spk
+END

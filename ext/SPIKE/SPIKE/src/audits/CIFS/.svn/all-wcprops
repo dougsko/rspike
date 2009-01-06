@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/src/audits/CIFS
+END
+netbios1.spk
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/src/audits/CIFS/netbios1.spk
+END
+cifs1.spk
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rspike/!svn/ver/1/ext/SPIKE/SPIKE/src/audits/CIFS/cifs1.spk
+END

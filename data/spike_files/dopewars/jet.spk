@@ -1,0 +1,28 @@
+s_string("doug");
+
+s_string("^^Ar");
+s_string("1111111");
+s_string("\n");
+
+s_string("^^Ac");
+s_string("doug");
+s_string("\n");
+
+// jet1
+// Program received signal SIGSEGV, Segmentation fault.
+// 0x0805ca0a in SendDrugsHere (To=0x809ab80, DisplayBusts=1) at
+// serverside.c:3264
+// 3264      NumRandom = brandom(Location[To->IsAt].MinDrug,
+//s_string("^AV");
+//s_string("5575");
+//s_string("\n");
+
+// jet2
+// Program received signal SIGSEGV, Segmentation fault.
+// 0x08062f6e in HandleServerMessage (buf=0x809af28 "", Play=0x809ab80) at
+// serverside.c:525
+// 525   dopelog(4, LF_SERVER, "%s jets to %s", GetPlayerName(Play),
+// Location[i].Name);
+s_string("^AV");
+s_string("5576");
+s_string("\n");

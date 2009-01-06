@@ -1,0 +1,50 @@
+find_library: checking for new_spike() in -ldlrpc... -------------------- yes
+
+"cc -o conftest -I. -I/usr/lib/ruby/1.8/i486-linux -I.  -Wall -I./SPIKE/SPIKE/include -I/mnt/sdb/bin/rspike/ext/SPIKE/SPIKE/src conftest.c  -L"." -L"/usr/lib" -L. -Wl,-Bsymbolic-functions -rdynamic -Wl,-export-dynamic     -lruby1.8-static -ldlrpc  -lpthread -ldl -lcrypt -lm   -lc"
+conftest.c: In function `t':
+conftest.c:3: error: `new_spike' undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))new_spike; return 0; }
+/* end */
+
+"cc -o conftest -I. -I/usr/lib/ruby/1.8/i486-linux -I.  -Wall -I./SPIKE/SPIKE/include -I/mnt/sdb/bin/rspike/ext/SPIKE/SPIKE/src conftest.c  -L"." -L"/usr/lib" -L. -Wl,-Bsymbolic-functions -rdynamic -Wl,-export-dynamic     -lruby1.8-static -ldlrpc  -lpthread -ldl -lcrypt -lm   -lc"
+conftest.c: In function `t':
+conftest.c:3: warning: implicit declaration of function `new_spike'
+/usr/bin/ld: cannot find -ldlrpc
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { new_spike(); return 0; }
+/* end */
+
+"cc -o conftest -I. -I/usr/lib/ruby/1.8/i486-linux -I.  -Wall -I./SPIKE/SPIKE/include -I/mnt/sdb/bin/rspike/ext/SPIKE/SPIKE/src conftest.c  -L"." -L"/usr/lib" -L"/mnt/sdb/bin/rspike/ext/SPIKE/SPIKE/src" -L. -Wl,-Bsymbolic-functions -rdynamic -Wl,-export-dynamic     -lruby1.8-static -ldlrpc  -lpthread -ldl -lcrypt -lm   -lc"
+conftest.c: In function `t':
+conftest.c:3: error: `new_spike' undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))new_spike; return 0; }
+/* end */
+
+"cc -o conftest -I. -I/usr/lib/ruby/1.8/i486-linux -I.  -Wall -I./SPIKE/SPIKE/include -I/mnt/sdb/bin/rspike/ext/SPIKE/SPIKE/src conftest.c  -L"." -L"/usr/lib" -L"/mnt/sdb/bin/rspike/ext/SPIKE/SPIKE/src" -L. -Wl,-Bsymbolic-functions -rdynamic -Wl,-export-dynamic     -lruby1.8-static -ldlrpc  -lpthread -ldl -lcrypt -lm   -lc"
+conftest.c: In function `t':
+conftest.c:3: warning: implicit declaration of function `new_spike'
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { new_spike(); return 0; }
+/* end */
+
+--------------------
+

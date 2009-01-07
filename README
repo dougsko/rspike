@@ -3,3 +3,10 @@ This is a ruby wrapper for the SPIKE fuzzer API.
 To build, make sure you're using gcc-3.4, then type:
 
   rake make
+
+You will then need to either put ext/SPIKE/SPIKE/src/libdlrpc.so in
+/usr/lib/ or export LD_LIBRARY_PATH to ext/SPIKE/SPIKE/src/ so that that
+library can be found.  If you want to just install the lib, you can do
+a:
+
+  sudo rake lib_install

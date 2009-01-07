@@ -1,8 +1,9 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 require 'rake/rdoctask'
 require 'rake/testtask'
 require 'rake/gempackagetask'
+require 'ftools'
 
 # Define global vars
 PROJECT = "Rspike"
@@ -13,6 +14,7 @@ UNIX_NAME = "rspike"
 WEBSITE_DIR = "."
 RDOC_HTML_DIR = "#{WEBSITE_DIR}/rdoc"
 DEPS = ""
+SPIKESRC_DIR = ENV["PWD"] + "/ext/SPIKE/SPIKE/src/"
 
 # Find version info
 REQUIRE_PATHS = ["."]
@@ -95,18 +97,14 @@ end
 
 # The "make" task builds spike and rspike
 desc "Build SPIKE and rspike"
-task "make" => ["make_clean"] do
-	spikesrc = ENV["PWD"] + "/ext/SPIKE/SPIKE/src"
-	ENV['LD_LIBRARY_PATH'] = spikesrc
-
-	Dir.chdir(spikesrc) do
-		`make clean`
+task "make" do
+	Dir.chdir(SPIKESRC_DIR) do
+		ENV["LD_LIBRARY_PATH"] = ENV["PWD"]
 		`./configure`
 		`make`
 	end
 
 	Dir.chdir("ext") do
-		`make clean`
 		`ruby extconf.rb`
 		`make`
 	end
@@ -115,11 +113,18 @@ end
 # make clean
 desc "Make clean"
 task "make_clean" do
-	Dir.chdir("ext/SPIKE/SPIKE/src") do
+	Dir.chdir(SPIKESRC_DIR) do
 		`make clean`
 	end
 
 	Dir.chdir("ext") do
 		`make clean`
 	end
+end
+
+# make install
+desc "Install libdlrpc.so to /usr/lib (use sudo)"
+task "lib_install" => ["make"] do
+	File.copy("#{SPIKESRC_DIR}/libdlrpc.so", "/usr/lib/")
+        
 end

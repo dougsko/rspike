@@ -58,20 +58,21 @@ configure:2265: found /usr/bin/gcc
 configure:2276: result: gcc
 configure:2514: checking for C compiler version
 configure:2521: gcc --version >&5
-gcc (GCC) 3.4.6 (Ubuntu 3.4.6-6ubuntu5)
-Copyright (C) 2006 Free Software Foundation, Inc.
+gcc (GCC) 4.2.4 (Ubuntu 4.2.4-1ubuntu3)
+Copyright (C) 2007 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 configure:2524: $? = 0
 configure:2531: gcc -v >&5
-Reading specs from /usr/lib/gcc/i486-linux-gnu/3.4.6/specs
-Configured with: ../src/configure -v --enable-languages=c,c++,f77,pascal --prefix=/usr --libexecdir=/usr/lib --with-gxx-include-dir=/usr/include/c++/3.4 --enable-shared --with-system-zlib --enable-nls --without-included-gettext --program-suffix=-3.4 --enable-__cxa_atexit --enable-clocale=gnu --enable-libstdcxx-debug --with-tune=pentium4 i486-linux-gnu
+Using built-in specs.
+Target: i486-linux-gnu
+Configured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-targets=all --enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu --target=i486-linux-gnu
 Thread model: posix
-gcc version 3.4.6 (Ubuntu 3.4.6-6ubuntu5)
+gcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu3)
 configure:2534: $? = 0
 configure:2541: gcc -V >&5
-gcc: `-V' option must have argument
+gcc: '-V' option must have argument
 configure:2544: $? = 1
 configure:2567: checking for C compiler default output file name
 configure:2594: gcc    conftest.c  >&5
@@ -130,7 +131,7 @@ configure:3700: checking how to run the C preprocessor
 configure:3740: gcc -E  conftest.c
 configure:3746: $? = 0
 configure:3777: gcc -E  conftest.c
-conftest.c:12:28: ac_nonexistent.h: No such file or directory
+conftest.c:12:28: error: ac_nonexistent.h: No such file or directory
 configure:3783: $? = 1
 configure: failed program was:
 | /* confdefs.h.  */
@@ -149,7 +150,7 @@ configure:3816: result: gcc -E
 configure:3845: gcc -E  conftest.c
 configure:3851: $? = 0
 configure:3882: gcc -E  conftest.c
-conftest.c:12:28: ac_nonexistent.h: No such file or directory
+conftest.c:12:28: error: ac_nonexistent.h: No such file or directory
 configure:3888: $? = 1
 configure: failed program was:
 | /* confdefs.h.  */
@@ -272,7 +273,7 @@ configure:4901: $? = 0
 configure:4917: result: yes
 configure:4926: checking return type of signal handlers
 configure:4954: gcc -c -g -O2  conftest.c >&5
-conftest.c: In function `main':
+conftest.c: In function 'main':
 conftest.c:34: error: void value not ignored as it ought to be
 configure:4960: $? = 1
 configure: failed program was:
@@ -321,7 +322,7 @@ configure:5049: $? = 0
 configure:5067: result: yes
 configure:5074: checking for _doprnt
 configure:5130: gcc -o conftest -g -O2   conftest.c -lssl -lc  >&5
-/tmp/ccRwF7yi.o: In function `main':
+/tmp/cc4IdjnT.o: In function `main':
 /mnt/sdb/bin/rspike/ext/SPIKE/SPIKE/src/conftest.c:64: undefined reference to `_doprnt'
 collect2: ld returned 1 exit status
 configure:5136: $? = 1

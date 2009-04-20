@@ -6,6 +6,9 @@
 
 require 'ext/rspike'
 
+# usage: ./line_send_tcp 192.168.1.100 701 something.spk 0 0
+#
+
 host = ARGV[0]
 port = ARGV[1].to_i
 script = ARGV[2]

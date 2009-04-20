@@ -1,0 +1,2 @@
+s_binary("00 00 00 04")
+s_string_variable("CNOP");

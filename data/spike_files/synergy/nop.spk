@@ -1,31 +1,29 @@
 s_binary("00 00 00 14");
 // handshake
-s_string_variable("Synergy");
+s_string("Synergy");
 s_binary_block_size_halfword_bigendian("host");
 s_block_start("host");
-s_string_variable("ganon");
+s_string("ganon");
 s_block_end("host");
 
 s_binary("00 00 00 12");
 // client data
-s_string_variable("DINF");
+s_string("DINF");
 // coordiniate of leftmost pixel on 2nd screen
-s_int_variable(0x0000, 4);
+s_int(0x0000, 4);
 // coordiniate of topmost pixel on 2nd screen
-s_int_variable(0x0000, 4);
+s_int(0x0000, 4);
 // width of 2nd screen
-s_int_variable(0x0a00, 4);
+s_int(0x0a00, 4);
 // height of 2nd screen
-s_int_variable(0x0400, 4);
+s_int(0x0400, 4);
 // warp zone
-s_int_variable(0x0000, 4)
+s_int(0x0000, 4)
 // x pos mouse 2nd screen
-s_int_variable(0x05b0, 4)
+s_int(0x05b0, 4)
 // y pos mouse 2nd screen
-s_int_variable(0x0286, 4)
+s_int(0x0286, 4)
 
 s_binary("00 00 00 4");
 // nop
 s_string_variable("NOP")
-
-

@@ -1,0 +1,7 @@
+s_binary("00 00 00 14");
+// handshake
+s_string_variable("Synergy");
+s_binary_block_size_halfword_bigendian("host");
+s_block_start("host");
+s_string_variable("ganon");
+s_block_end("host");

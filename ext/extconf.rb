@@ -4,7 +4,7 @@ spikesrc = ENV["PWD"] + "/ext/SPIKE/SPIKE/src"
 #spikesrc = "SPIKE/SPIKE/src"
 ENV['LD_LIBRARY_PATH'] = spikesrc
 
-$CC = "gcc-3.4"
+$CC = "gcc"
 # $LOCAL_LIBS = "-ldlrpc"
 $CFLAGS = "-Wall -I./SPIKE/SPIKE/include -I#{spikesrc}"
 

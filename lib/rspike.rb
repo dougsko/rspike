@@ -2,6 +2,8 @@
 #
 #
 
+require 'rspike.so'
+
 class Rspike
 Rspike::VERSION = "0.0.1"
 

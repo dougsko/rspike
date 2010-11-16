@@ -2,7 +2,7 @@
 require 'rubygems'
 require 'mkmf'
 
-$CPPFLAGS << "-fno-stack-protector -I../SPIKE/SPIKE/include"
+$CPPFLAGS << "-fno-stack-protector -Iinclude"
 dir_config(ENV['PWD'])
 have_library("dlrpc", "new_spike")
 have_library('dl')

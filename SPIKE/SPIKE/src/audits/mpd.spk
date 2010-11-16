@@ -1,0 +1,14 @@
+s_string_variable("status");
+s_string("\n");
+
+s_string_variable("seekid \"56\" \"6\");
+s_string("\n");
+
+s_string_variable("status");
+s_string("\n");
+
+s_string_variable("pause \"1\"");
+s_string("\n");
+
+s_string_variable("stop");
+s_string("\n");

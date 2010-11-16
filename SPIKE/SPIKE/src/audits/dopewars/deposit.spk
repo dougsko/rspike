@@ -1,0 +1,23 @@
+s_string("doug");
+s_string("^^");
+
+s_string("Ar");
+s_string("1111111");
+s_string("\n");
+
+s_string("^^Ac");
+s_string("doug");
+s_string("\n");
+
+// make a deposit
+s_string("^AY");
+s_string_variable("100");
+s_string("\n");
+
+// say yes
+s_string("^AX");
+s_string("\n");
+
+// done
+s_string("^AU");
+s_string("\n");

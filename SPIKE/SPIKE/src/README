@@ -1,0 +1,7 @@
+see INSTALL
+
+use aclocal && automake; ./configure; make 
+
+If getting errors, set 
+CFLAGS="-fno-stack-protector"
+

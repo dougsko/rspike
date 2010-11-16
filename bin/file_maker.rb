@@ -17,7 +17,7 @@ script = ARGV[0]
 skipvars = ARGV[1]
 skipfuzzstr = ARGV[2]
 
-s = Spike.new
+s = RSpike.new
 s.set_spike
 s.init_fuzz
 

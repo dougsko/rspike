@@ -4,7 +4,7 @@
 
 require 'rspike.so'
 
-class Spike
+class RSpike
     def generate(script)
         self.set_spike
         self.init_fuzz

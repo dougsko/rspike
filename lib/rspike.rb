@@ -7,8 +7,8 @@ require 'rspike.so'
 class SpikeObject
     attr_accessor :fuzzvarnum, :fuzzstrnum, :string
     def initialize(fuzzvarnum, fuzzstrnum, string)
-        @fuzzvarnum = fuzzvarnum.to_s
-        @fuzzstrnum = fuzzstrnum.to_s
+        @fuzzvarnum = fuzzvarnum
+        @fuzzstrnum = fuzzstrnum
         @string = string
     end
 end

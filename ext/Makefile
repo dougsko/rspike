@@ -37,19 +37,19 @@ datadir = $(datarootdir)
 localstatedir = $(DESTDIR)/var
 sitelibdir = $(sitedir)/$(ruby_version)
 
-CC = cc
+CC = gcc
 LIBRUBY = $(LIBRUBY_SO)
 LIBRUBY_A = lib$(RUBY_SO_NAME)-static.a
 LIBRUBYARG_SHARED = -l$(RUBY_SO_NAME)
 LIBRUBYARG_STATIC = -l$(RUBY_SO_NAME)-static
 
 RUBY_EXTCONF_H = 
-CFLAGS   =  -fPIC -Wall -I./SPIKE/SPIKE/include -I/home/doug/bin/rspike/ext/SPIKE/SPIKE/src 
+CFLAGS   =  -fPIC -fno-strict-aliasing -g -g -O2  -fPIC $(cflags) 
 INCFLAGS = -I. -I. -I/usr/lib/ruby/1.8/i486-linux -I.
 DEFS     = -D_FILE_OFFSET_BITS=64
-CPPFLAGS =   -D_FILE_OFFSET_BITS=64 
+CPPFLAGS =   -D_FILE_OFFSET_BITS=64 -fno-stack-protector -I../SPIKE/SPIKE/include
 CXXFLAGS = $(CFLAGS) 
-ldflags  = -L.  -rdynamic -Wl,-export-dynamic
+ldflags  = -L. -Wl,-Bsymbolic-functions -rdynamic -Wl,-export-dynamic
 dldflags = 
 archflag = 
 DLDFLAGS = $(ldflags) $(dldflags) $(archflag)
@@ -86,9 +86,9 @@ extout =
 extout_prefix = 
 target_prefix = 
 LOCAL_LIBS = 
-LIBS = $(LIBRUBYARG_SHARED) -ldlrpc  -lpthread -ldl -lcrypt -lm   -lc
-SRCS = rspike.c spike.c hdebug.c tcpstuff.c udpstuff.c dlrpc.c src
-OBJS = rspike.o /home/doug/bin/rspike/ext/SPIKE/SPIKE/src/spike.o /home/doug/bin/rspike/ext/SPIKE/SPIKE/src/hdebug.o /home/doug/bin/rspike/ext/SPIKE/SPIKE/src/tcpstuff.o /home/doug/bin/rspike/ext/SPIKE/SPIKE/src/udpstuff.o /home/doug/bin/rspike/ext/SPIKE/SPIKE/src/dlrpc.o -L/home/doug/bin/rspike/ext/SPIKE/SPIKE/src
+LIBS = $(LIBRUBYARG_SHARED) -ldl -ldlrpc  -lpthread -lrt -ldl -lcrypt -lm   -lc
+SRCS = rspike.c
+OBJS = rspike.o
 TARGET = rspike
 DLLIB = $(TARGET).so
 EXTSTATIC = 
@@ -148,7 +148,7 @@ site-install-rb: install-rb
 .c.o:
 	$(CC) $(INCFLAGS) $(CPPFLAGS) $(CFLAGS) -c $<
 
-$(DLLIB): $(OBJS)
+$(DLLIB): $(OBJS) Makefile
 	@-$(RM) $@
 	$(LDSHARED) -o $@ $(OBJS) $(LIBPATH) $(DLDFLAGS) $(LOCAL_LIBS) $(LIBS)
 

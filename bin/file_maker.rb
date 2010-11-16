@@ -4,7 +4,8 @@
 # make fuzzed up files
 #
 
-require 'ext/rspike'
+require 'rubygems'
+require 'rspike'
 
 if ARGV.size < 3 or ARGV[0] =~ /-h|--help/
     puts "\nExample usage: #{__FILE__} data/spike_files/pls.spk 0 0\n"

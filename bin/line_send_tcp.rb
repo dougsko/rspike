@@ -4,7 +4,8 @@
 # ruby version of line_send_tcp.c
 #
 
-require 'ext/rspike'
+require 'rubygems'
+require 'rspike'
 
 # usage: ./line_send_tcp 192.168.1.100 701 something.spk 0 0
 #

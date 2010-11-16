@@ -5,8 +5,6 @@
 require 'rspike.so'
 
 class Spike
-Rspike::VERSION = "0.0.1"
-
     def generate(script)
         self.set_spike
         self.init_fuzz

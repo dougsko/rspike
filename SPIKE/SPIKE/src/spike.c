@@ -1869,7 +1869,7 @@ size=current_spike->datasize;
 	  s_string(s_fuzzstring[current_spike->fuzzstring]);
 
 size2=current_spike->datasize;
-printf("Variablesize= %d\n",size2-size);
+//printf("Variablesize= %d\n",size2-size);
 	  /*we set this, and it gets unset the next time we do a
 	    variable. It works, I guarantee it. :> */
 	  current_spike->didlastvariable=1;
